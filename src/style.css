@@ -1,0 +1,206 @@
+* { 
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  /*background-color: #000;*/
+  background-image: url("back.gif");
+  /*background-repeat: repeat-x repeat-y;*/
+  font-family:  'Space Mono, Arial', monospace;
+  font: monospace;
+}
+
+.clock {
+  height: 500px;
+  width: 500px;
+  background-color: #fffdcf;
+  border-radius: 100%;
+  border: 3px solid #AAAAAA;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  box-shadow: 4px 0px 8px inset grey;
+}
+
+.twelve {
+  position: absolute;
+  width: 33px;
+  height: 15px;
+  /*background: #111111;*/
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+.three {
+  position: absolute;
+  width: 15px;
+  height: 33px;
+  /*background: #111111;*/
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 0;
+  font-size: 30px;
+ }
+
+.six {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  /*background: #111111;*/
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+.nine {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  /*background: #111111;*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  font-size: 30px;
+ }
+
+.center {
+   width: 10px;
+   height: 10px;
+   position: absolute;
+   left: 0; right: 0; bottom: 0; top: 0;
+   margin: auto;
+   background: #000;
+   border-radius: 100%;
+ }
+
+ .name {
+  text-align: center;
+  color: black;
+  position: absolute;
+  left: 0; right: 0;
+  bottom: 30%;
+ }
+ .date {
+  text-align: center;
+  color: black;
+  position: absolute;
+  left: 0; right: 0;
+  bottom: 72%;
+ }
+#d_date {
+  text-align: center;
+  color: black;
+  position: absolute;
+  left: 45.75%;
+  bottom: 68%;
+  font-size: 25px;
+  border-radius: 4px;
+  padding: 0px;
+  background-color: #e6e4b8;
+  box-shadow: 2px 0px 4px inset grey;
+  width: 35px;
+}
+#m_date {
+  text-align: center;
+  color: black;
+  position: absolute;
+  left: 48%;
+  bottom: 68%;
+  font-size: 25px;
+  border-radius: 4px;
+  padding: 0px;
+  background-color: #e6e4b8;
+  box-shadow: 2px 0px 4px inset grey;
+  width: 35px;
+}
+#y_date {
+  text-align: center;
+  color: black;
+  position: absolute;
+  left: 50.25%;
+  bottom: 68%;
+  font-size: 25px;
+  border-radius: 4px;
+  padding: 0px;
+  background-color: #e6e4b8;
+  box-shadow: 2px 0px 4px inset grey;
+  width: 60px;
+}
+#h_dig {
+  text-align: center;
+  color: black;
+  position: absolute;
+  left: 47.5%;
+  bottom: 35%;
+  font-size: 25px;
+  border-radius: 4px;
+  padding: 0px;
+  background-color: #e6e4b8;
+  box-shadow: 2px 0px 4px inset grey;
+  width: 35px;
+}
+#m_dig {
+  text-align: center;
+  color: black;
+  position: absolute;
+  left: 50.75%;
+  bottom: 35%;
+  font-size: 25px;
+  border-radius: 4px;
+  padding: 0px;
+  background-color: #e6e4b8;
+  box-shadow: 2px 0px 4px inset grey;
+  width: 35px;
+}
+#col {
+  text-align: center;
+  color: black;
+  position: absolute;
+  left: 49.80%;
+  bottom: 35%;
+  font-size: 25px;
+  border-radius: 4px;
+  padding: 0px;
+  width: 3px;
+}
+
+
+#seconds {
+   position: absolute;
+   height: 160px;
+   width: 2px;
+   left: 0; right: 0; bottom: 160px; top: 0px;
+   margin: auto;
+   background: #000;
+   -webkit-transform-origin: bottom;
+   background: #FF4136;
+}
+
+#minutes {
+  position: absolute;
+  height: 200px;
+  width: 2px;
+  left: 0; right: 0; bottom: 200px; top: 0px;
+  margin: auto;
+  background: #000;
+  -webkit-transform-origin: bottom;
+}
+
+#hours {
+  position: absolute;
+  height: 80px;
+  width: 6px;
+  left: 0; right: 0; bottom: 80px; top: 0px;
+  margin: auto;
+  background: #000;
+  -webkit-transform-origin: bottom;
+}
