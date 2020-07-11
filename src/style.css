@@ -12,18 +12,6 @@ body {
   font: monospace;
 }
 
-.clock {
-  height: 500px;
-  width: 500px;
-  background-color: #fffdcf;
-  border-radius: 100%;
-  border: 3px solid #AAAAAA;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  box-shadow: 4px 0px 8px inset grey;
-}
-
 .twelve {
   position: absolute;
   width: 33px;
@@ -87,20 +75,68 @@ body {
   color: black;
   position: absolute;
   left: 0; right: 0;
-  bottom: 30%;
+  bottom: 15%;
+ }
+
+@media only screen and (min-width: 508px) {   
+  .clock {
+  height: 500px;
+  width: 500px;
+  background-color: #fffdcf;
+  border-radius: 100%;
+  border: 3px solid #AAAAAA;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  box-shadow: 4px 0px 8px inset grey;
+}
+
+#seconds {
+   position: absolute;
+   height: 230px;
+   width: 2px;
+   left: 0; right: 0; bottom: 230px; top: 0px;
+   margin: auto;
+   background: #000;
+   -webkit-transform-origin: bottom;
+   background: #FF4136;
+}
+
+#minutes {
+  position: absolute;
+  height: 215px;
+  width: 2px;
+  left: 0; right: 0; bottom: 215px; top: 0px;
+  margin: auto;
+  background: #000;
+  -webkit-transform-origin: bottom;
+}
+
+#hours {
+  position: absolute;
+  height: 90px;
+  width: 6px;
+  left: 0; right: 0; bottom: 90px; top: 0px;
+  margin: auto;
+  background: #000;
+  -webkit-transform-origin: bottom;
+}
+#datei{
+  width: 10px;
+  margin-left: 37%;
  }
  .date {
   text-align: center;
   color: black;
   position: absolute;
-  left: 0; right: 0;
-  bottom: 72%;
+  margin-left: 47%;
+  bottom: 75%;
  }
 #d_date {
   text-align: center;
   color: black;
   position: absolute;
-  left: 45.75%;
+  margin-left: 3px;
   bottom: 68%;
   font-size: 25px;
   border-radius: 4px;
@@ -113,7 +149,7 @@ body {
   text-align: center;
   color: black;
   position: absolute;
-  left: 48%;
+  margin-left: 35px;
   bottom: 68%;
   font-size: 25px;
   border-radius: 4px;
@@ -126,7 +162,7 @@ body {
   text-align: center;
   color: black;
   position: absolute;
-  left: 50.25%;
+  margin-left: 67px;
   bottom: 68%;
   font-size: 25px;
   border-radius: 4px;
@@ -139,8 +175,8 @@ body {
   text-align: center;
   color: black;
   position: absolute;
-  left: 47.5%;
-  bottom: 35%;
+  margin-left: 20px;
+  bottom: 30%;
   font-size: 25px;
   border-radius: 4px;
   padding: 0px;
@@ -152,8 +188,8 @@ body {
   text-align: center;
   color: black;
   position: absolute;
-  left: 50.75%;
-  bottom: 35%;
+  margin-left: 60px;
+  bottom: 30%;
   font-size: 25px;
   border-radius: 4px;
   padding: 0px;
@@ -165,20 +201,35 @@ body {
   text-align: center;
   color: black;
   position: absolute;
-  left: 49.80%;
-  bottom: 35%;
+  margin-left: 50px;
+  bottom: 30%;
   font-size: 25px;
   border-radius: 4px;
   padding: 0px;
   width: 3px;
 }
-
-
+#dig {
+  width: 10px;
+  margin-left: 37%;
+}
+}
+@media only screen and (max-width: 507px) {
+  .clock {
+  height: 325px;
+  width: 325px;
+  background-color: #fffdcf;
+  border-radius: 100%;
+  border: 3px solid #AAAAAA;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  box-shadow: 4px 0px 8px inset grey;
+}
 #seconds {
    position: absolute;
-   height: 160px;
+   height: 150px;
    width: 2px;
-   left: 0; right: 0; bottom: 160px; top: 0px;
+   left: 0; right: 0; bottom: 150px; top: 0px;
    margin: auto;
    background: #000;
    -webkit-transform-origin: bottom;
@@ -187,9 +238,9 @@ body {
 
 #minutes {
   position: absolute;
-  height: 200px;
+  height: 140px;
   width: 2px;
-  left: 0; right: 0; bottom: 200px; top: 0px;
+  left: 0; right: 0; bottom: 140px; top: 0px;
   margin: auto;
   background: #000;
   -webkit-transform-origin: bottom;
@@ -203,4 +254,96 @@ body {
   margin: auto;
   background: #000;
   -webkit-transform-origin: bottom;
+}
+#datei{
+  width: 10px;
+  margin-left: 29%;
+ }
+ .date {
+  text-align: center;
+  color: black;
+  position: absolute;
+  margin-left: 45%;
+  bottom: 75%;
+ }
+#d_date {
+  text-align: center;
+  color: black;
+  position: absolute;
+  margin-left: 3px;
+  bottom: 65%;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 0px;
+  background-color: #e6e4b8;
+  box-shadow: 2px 0px 4px inset grey;
+  width: 35px;
+}
+#m_date {
+  text-align: center;
+  color: black;
+  position: absolute;
+  margin-left: 35px;
+  bottom: 65%;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 0px;
+  background-color: #e6e4b8;
+  box-shadow: 2px 0px 4px inset grey;
+  width: 35px;
+}
+#y_date {
+  text-align: center;
+  color: black;
+  position: absolute;
+  margin-left: 67px;
+  bottom: 65%;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 0px;
+  background-color: #e6e4b8;
+  box-shadow: 2px 0px 4px inset grey;
+  width: 60px;
+}
+#h_dig {
+  text-align: center;
+  color: black;
+  position: absolute;
+  margin-left: 20px;
+  bottom: 30%;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 0px;
+  background-color: #e6e4b8;
+  box-shadow: 2px 0px 4px inset grey;
+  width: 35px;
+}
+#m_dig {
+  text-align: center;
+  color: black;
+  position: absolute;
+  margin-left: 60px;
+  bottom: 30%;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 0px;
+  background-color: #e6e4b8;
+  box-shadow: 2px 0px 4px inset grey;
+  width: 35px;
+}
+#col {
+  text-align: center;
+  color: black;
+  position: absolute;
+  margin-left: 50px;
+  bottom: 30%;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 0px;
+  width: 3px;
+}
+#dig {
+  width: 10px;
+  margin-left: 31%;
+}
 }
